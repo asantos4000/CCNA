@@ -25,3 +25,10 @@ line vty 5 15
 !
 !
 end
+
+En forma adicional escribo como se crea la clave RSA
+crypto key generate rsa (este es el comando)
+ 
+The name for the keys will be: sw.sw1.com Choose the size of the key modulus in the range of 360 to 2048 for your General Purpose Keys.
+Choosing a key modulus greater than 512 may take a few minutes. How many bits in the modulus [512]: 2048 (aqui se ingresa la cantidad de bit)
+Generating 2048 bit RSA keys, keys will be non-exportable…[OK]
