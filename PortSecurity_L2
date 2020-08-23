@@ -1,0 +1,24 @@
+**** Ejemplo de configuracion de Port Security ****
+**** Con opción de violation shutdown ****
+**** switchport port-security violation shutdown ****
+!
+interface FastEthernet0/1
+ description PC1
+ switchport mode access
+ switchport port-security
+ switchport port-security mac-address sticky 
+ switchport port-security mac-address sticky 0004.9A93.C5C9
+!
+interface FastEthernet0/2
+ description Server1
+ switchport mode access
+ switchport port-security
+ switchport port-security mac-address sticky 
+ switchport port-security mac-address sticky 00E0.F709.8CD1
+!
+interface FastEthernet0/3
+ shutdown
+!
+interface FastEthernet0/4
+ shutdown
+!
